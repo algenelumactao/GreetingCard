@@ -24,7 +24,13 @@ class MainActivity : ComponentActivity() {
             GreetingCardTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Greeting(
-                        name = "Group 1 ITELECT",
+                        name = "Group 1 ITELECT\n" +
+                "1. Butantan, Trixie\n" +
+                "2. De la Cruz, Ricsie Rhey\n" +
+                "3. Guiamadel, Alejan\n" +
+                "4. Lumactao, Algene Kate\n" +
+                "5. Toling, Jomel\n" +
+                "6. Utom, Jhonny",
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
@@ -47,6 +53,12 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview() {
     GreetingCardTheme {
-        Greeting("Group 1 ITELECT")
+        Greeting("Group 1 ITELECT\n" +
+                "1. Butantan, Trixie\n" +
+                "2. De la Cruz, Ricsie Rhey\n" +
+                "3. Guiamadel, Alejan\n" +
+                "4. Lumactao, Algene Kate\n" +
+                "5. Toling, Jomel\n" +
+                "6. Utom, Jhonny")
     }
 }
